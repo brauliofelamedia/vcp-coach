@@ -1,0 +1,14 @@
+Coach VCP · 19 octubre 2026
+
+Comprobación local: 27/27 pruebas; comprobación de sintaxis, IDs HTML únicos, consentimiento, assets de marca y separación de archivos públicos aprobada.
+API /chat y /research comprobadas con proveedor simulado y sin DATABASE_URL, AUTH_SECRET, DATA_ENCRYPTION_KEY ni RESEND_API_KEY. Aislamiento de tokens OIDC concurrentes comprobado. Rutas de expedientes/auth/cron deshabilitadas. Sin cron desplegado.
+
+Comprobación en navegador: chat público disponible sin correo; botones y campos funcionan; consulta de ROI llega al proveedor y devuelve mensaje de verificación pendiente. No se recibió una respuesta de IA válida. La ausencia de respuesta no se oculta con contenido simulado. La investigación tiene los cuatro modos y el formulario de lead muestra sus campos.
+
+Corrección adicional: OIDC de Vercel leído desde el encabezado por solicitud. Antes solo se consultaba la variable de entorno y el runtime no tenía credencial. Ahora AI Gateway devuelve customer_verification_required, mostrado claramente en la página.
+
+Modelo: openai/gpt-6-luna excluido del crédito gratuito según catálogo oficial. Se cambió AI_GATEWAY_MODEL a openai/gpt-5-mini (Free AI Gateway Credit: Yes; mismo proveedor OpenAI, soporta imágenes/búsqueda). Modelo configurado en producción y preview. No se cambió de plan ni se compró crédito.
+
+Pendiente: titular debe completar Add a Card tras Use Free AI Gateway Credit en Vercel. El panel sigue en $0.00 AI Credit y verificación pendiente. No se llenaron datos de tarjeta ni se activaron recargas. Tras la verificación, probar conversación de seguimiento, fuentes, capturas y descarga con una respuesta real; estas comprobaciones de generación en vivo no pudieron completarse.
+
+Limitación: throttling en memoria por instancia; no es un presupuesto distribuido. No hay persistencia de conversaciones. No hay registros de runtime consultados en esta comprobación; resultado observado desde UI pública y estado READY del despliegue.

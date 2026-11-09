@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+archive
+tests
+scripts/prepare-ui.py
+deployment-state.json
+verification.txt

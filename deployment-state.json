@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-19T18:54:12.061632+00:00",
+  "teamId": "team_CNVrPC5JwJzYCSl1jQuy4T5T",
+  "teamSlug": "oriana6",
+  "projectId": "prj_J1eDJTV0qNWu8WHpEdjRwpXhPfuq",
+  "projectName": "vcp-coach",
+  "productionUrl": "https://vcp-coach.vercel.app",
+  "deploymentId": "dpl_FWua1bfhFTunMCVbKRduQkLzJQVk",
+  "deploymentUrl": "https://vcp-coach-6og5v8a2q-oriana6.vercel.app",
+  "target": "production",
+  "mode": "public-consultations",
+  "aiModel": "openai/gpt-5-mini",
+  "modelFreeCreditEligibility": "Verified Yes in official Vercel catalog on 2026-10-19",
+  "providerVerified": false,
+  "blockingRequirement": "AI Gateway customer_verification_required; owner must complete free credit card verification in Vercel",
+  "email": "deferred, not used by public API",
+  "customDomain": "deferred, not added",
+  "database": "deferred, not used by public API",
+  "paidPlansPurchased": false,
+  "paidCreditsPurchased": false,
+  "automaticTopupsEnabled": false,
+  "tests": {
+    "passed": 27,
+    "failed": 0
+  },
+  "readyState": "READY"
+}
